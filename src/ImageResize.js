@@ -46,6 +46,10 @@ export default class ImageResize {
         this.modules = [];
     }
 
+    getQuillClass = () => {
+        return this.quill.constructor;
+    }
+
     initializeModules = () => {
         this.removeModules();
 
@@ -188,13 +192,9 @@ export default class ImageResize {
     checkImage = (evt) => {
         if (this.img) {
             if (evt.keyCode == 46 || evt.keyCode == 8) {
-                window.Quill.find(this.img).deleteAt(0);
+                this.getQuillClass().find(this.img).deleteAt(0);
             }
             this.hide();
         }
     };
-}
-
-if (window.Quill) {
-    window.Quill.register('modules/imageResize', ImageResize);
 }
