@@ -1,0 +1,45 @@
+{
+  "name": "quill-image-resize-module-withfix",
+  "version": "3.0.5",
+  "private": false,
+  "description": "A module for Quill rich text editor to allow images to be resized.",
+  "main": "image-resize.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "webpack -p --progress --colors",
+    "dev": "webpack --progress --colors --watch",
+    "lint": "eslint --ext js,es6 src",
+    "fixlint": "eslint --fix --ext js,es6 src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyuehh/quill-image-resize-module.git"
+  },
+  "keywords": [
+    "quill",
+    "quilljs",
+    "image",
+    "resize",
+    "sizer"
+  ],
+  "author": "@kensnyder",
+  "contributors": [
+    {
+      "name": "Wikia",
+      "url": "https://github.com/Wikia"
+    },
+    {
+      "name": "Srinath",
+      "url": "https://github.com/vjsrinath"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyuehh/quill-image-resize-module/issues"
+  },
+  "homepage": "https://github.com/lyuehh/quill-image-resize-module#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
