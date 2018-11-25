@@ -1,6 +1,6 @@
 {
-  "name": "@appsflare/quill-image-resize-module",
-  "version": "3.0.3",
+  "name": "quill-image-resize-module-fix",
+  "version": "3.0.4",
   "description": "A module for Quill rich text editor to allow images to be resized.",
   "main": "image-resize.min.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/appsflare/quill-image-resize-module.git"
+    "url": "git+https://github.com/lyuehh/quill-image-resize-module.git"
   },
   "keywords": [
     "quill",
@@ -34,9 +34,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/appsflare/quill-image-resize-module/issues"
+    "url": "https://github.com/lyuehh/quill-image-resize-module/issues"
   },
-  "homepage": "https://github.com/appsflare/quill-image-resize-module#readme",
+  "homepage": "https://github.com/lyuehh/quill-image-resize-module#readme",
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-eslint": "^7.2.1",

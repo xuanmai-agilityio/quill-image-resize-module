@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.0.4
+- Remove the overlay when scroll
+
+## v3.0.3
+- Removed the need to reference Quill object from window
+
 ## v3.0.0 - April 9, 2017
 
 - Position drag handles relative to editor, not document
