@@ -24,9 +24,9 @@ export class Toolbar extends BaseModule {
 
     _defineAlignments = () => {
         const Parchment = this.quill.constructor.imports.parchment;
-        const FloatStyle = new Parchment.Attributor.Style('float', 'float');
-        const MarginStyle = new Parchment.Attributor.Style('margin', 'margin');
-        const DisplayStyle = new Parchment.Attributor.Style('display', 'display');
+        const FloatStyle = new Parchment.StyleAttributor('float', 'float');
+        const MarginStyle = new Parchment.StyleAttributor('margin', 'margin');
+        const DisplayStyle = new Parchment.StyleAttributor('display', 'display');
         this.alignments = [
             {
                 icon: IconAlignLeft,
@@ -60,9 +60,9 @@ export class Toolbar extends BaseModule {
 
     _addToolbarButtons = () => {
         const Parchment = this.quill.constructor.imports.parchment;
-        const FloatStyle = new Parchment.Attributor.Style('float', 'float');
-        const MarginStyle = new Parchment.Attributor.Style('margin', 'margin');
-        const DisplayStyle = new Parchment.Attributor.Style('display', 'display');
+        const FloatStyle = new Parchment.StyleAttributor('float', 'float');
+        const MarginStyle = new Parchment.StyleAttributor('margin', 'margin');
+        const DisplayStyle = new Parchment.StyleAttributor('display', 'display');
         const buttons = [];
         this.alignments.forEach((alignment, idx) => {
             const button = document.createElement('span');
