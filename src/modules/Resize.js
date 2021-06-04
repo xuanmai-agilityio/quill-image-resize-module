@@ -76,6 +76,10 @@ export class Resize extends BaseModule {
 			const url = new URL(this.img.src);
 			const updateUrl = `${url.origin}${url.pathname}?auto=format&w=${this.img.width}`;
 			this.img.src = updateUrl;
+			this.img.srcset=`
+			${url.origin}${url.pathname}?auto=format&w=${this.img.width}&dpr=1 1x,
+			${url.origin}${url.pathname}?auto=format&w=${this.img.width}&dpr=2 2x,
+			${url.origin}${url.pathname}?auto=format&w=${this.img.width}&dpr=3 3x,`
 		}
         // stop listening for movement and mouseup
         document.removeEventListener('mousemove', this.handleDrag);
